@@ -2,6 +2,8 @@ name: Continuos Integration and Delivery
 
 on: [push]
 
+workflow_dispatch:
+
 env:
   WEB_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/web
   NGINX_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/nginx
