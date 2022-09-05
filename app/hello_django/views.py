@@ -6,9 +6,6 @@ from lectioscraper import Lectio
 # Create your views here.
 
 
-def home(request):
-    return JsonResponse({"hello": "world!!"})
-
 @csrf_exempt
 def check_first_lecture_status(request):
     if request.method != 'POST':
