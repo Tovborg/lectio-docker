@@ -1,5 +1,5 @@
 from django.urls import path, include
-from lectio.views import *
+from .views import *
 
 namespace = 'lectio'
 
