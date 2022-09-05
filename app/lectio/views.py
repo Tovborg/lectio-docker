@@ -64,7 +64,7 @@ def get_schedule(request):
         schedule_json[i['Id']] = i
     return JsonResponse(schedule_json)
 
-    
+# git pull test
 
 @csrf_exempt
 def get_todays_schedule(request):
