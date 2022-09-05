@@ -7,7 +7,7 @@ from lectioscraper import Lectio
 
 
 def home(request):
-    return JsonResponse({"hello": "world!!"})
+    return JsonResponse({"hello": "world 2!!!"})
 
 @csrf_exempt
 def check_first_lecture_status(request):
