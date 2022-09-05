@@ -7,13 +7,8 @@ from django.http import JsonResponse
 from lectio.views import *
 
 urlpatterns = [
-    path('api/first_lecture_status/', check_first_lecture_status,
-         name='first_lecture_status'),
-    path('api/get_schedule/', get_schedule, name='get_schedule'),
-    path('api/get_todays_schedule/', get_todays_schedule,
-         name='get_todays_schedule'),
+    path('', include('lectio.urls')),
     path('admin/', admin.site.urls),
-    path('', home, name='home'),
 ]
 
 if bool(settings.DEBUG):
